@@ -3,7 +3,7 @@ spis1 = [1, 2, 'string1']
 l1= spis1[0]
 l2= spis1[1]
 l3= spis1[2]
-print(l1,l2,l3)
+print(l1, l2, l3)
 
 #### [Словари Dictonary]
 dict = {'one': 1, 'two': 2, 'three': 3}
@@ -54,10 +54,10 @@ for i in range(6):
     print(i)
 
 #### создать строку 'TEST', если в ней есть буква 'E', напечатать 'pass'
-s1=set('TEST')
-s2=set('E')
-if (s1 & s2 ):
-    print ('pass')
+
+t_string = 'TEST'
+if 'E' in t_string:
+     print('pass')
 else:
     print('fail')
 
