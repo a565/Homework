@@ -130,17 +130,22 @@ for g in first_gen():
 С помощью стандартной функции collections.namedtuple создать объект для хранения точки 
 в трехмерном пространстве.
 '''
+import collections
+#collections.namedtuple
+Point = collections.namedtuple('Point', ['x', 'y','z'])
+p1 = Point(x=1, y=2, z=3)
+p2 = Point(11, 22,33)
+d=p1.x + p2.x
+print (p1.z,d)
 
 '''
 Создать пакет в котором будет функция для распечатки текущей даты (можно использовать 
 пакет datetime). Для данного пакета подготовить setup.py для установки.
 '''
-import datetime
-
-dt_now = datetime.datetime.now()
-print(dt_now)
 
 from datetime import date
-
 current_date = date.today()
 print(current_date)
+
+import mypackage.work
+mypackage.work.m_date()
