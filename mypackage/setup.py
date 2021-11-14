@@ -1,10 +1,10 @@
 from setuptools import setup
 
 setup(
-    name='foobar',
+    name='work',
     version='1.0',
     author='Author',
-    packages=['foobar'],
+    packages=['work'],
     description='Description',
     package_data={'': ['*.txt']},
     install_requires=['requests'],
