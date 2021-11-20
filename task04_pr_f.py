@@ -11,27 +11,20 @@ catalogs=os.listdir(path='C:\Git\Pyton\Homework\mypackage')
 def dir_pr(catalogs):
    import logging
    import sys
+
    logging.basicConfig(stream=sys.stdout, level=logging.DEBUG)
    len1 = len(catalogs)
    i=0
 
    while len1-i > 1:
        logging.debug(catalogs[i])
-       print('Каталог {}'.format(catalogs[i]))
+       #print('Каталог {}'.format(catalogs[i]))
        i = i + 1
        continue  # Перейти в начало циклa
+   print('В каталоге было распечатано {} файлов'.format(i+1))
+#print(f'Произведение {n} на {m} равно {prod}')
+
 
 dir_pr(catalogs)
-'''
-    i = 0
-    for i in catalogs:
-        print(catalogs[i])
-        i = i + 1
-        
-        len=Catalogs.length
-   for i = 0 t
-   while catalogs[i]:
-           logging.debug(catalogs[i])
-           print('Каталог {}'.format(catalogs[i]))
-           i=i+1
-'''
+
+
