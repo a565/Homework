@@ -11,6 +11,6 @@ response = requests.get('https://www.epam.com')
 from bs4 import BeautifulSoup
 soup = BeautifulSoup(response.text, 'html.parser')
 
-f = open("epam-html.txt", "w")  # "w" - создать файл для записи
-f.write(soup)              # записать в file-подобный объект
+f = open("epam-html.txt", "w", encoding="cp1251")   # "w" - создать файл для записи
+print(soup.text, file=f)           # печать в файл
 f.close()
