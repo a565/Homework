@@ -21,7 +21,7 @@ def dir_pr(catalogs):
        #print('Каталог {}'.format(catalogs[i]))
        i = i + 1
        continue  # Перейти в начало циклa
-   print('В каталоге было распечатано {} файлов'.format(i+1))
+   print(f'В каталоге было распечатано {i} файлов')
 #print(f'Произведение {n} на {m} равно {prod}')
 
 
