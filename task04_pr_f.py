@@ -16,7 +16,7 @@ print(output.stdout.decode())
 
 import logging
 """
-настройка корневого логгера
+настройка корневого логгера 
 
 отправка сообщений stderr
 """
