@@ -17,15 +17,13 @@ class TestAuthPageTest:
         auth_page = AuthPage(driver=driver)
         auth_page.open()
 
-        time.sleep(2)
 
         auth_page.fill_login_input('')
         auth_page.fill_pwd_input('')
 
         auth_page.login_page()
 
-        time.sleep(2)
-
+        
         prof_page = ProfilePage(driver=driver)
         prof_page.open()
 
