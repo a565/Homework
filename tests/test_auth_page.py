@@ -1,5 +1,6 @@
 import time
 from pages.auth_page import AuthPage
+from pages.ProfilePage import ProfilePage
 import pytest
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
@@ -17,17 +18,18 @@ class TestAuthPageTest:
         auth_page.open()
 
         time.sleep(2)
-#        auth_page.fill_login_input('')
-#        auth_page.fill_pwd_input('')
 
-        auth_page.fill_login_input2('')
-        auth_page.fill_pwd_input2('')
+        auth_page.fill_login_input('')
+        auth_page.fill_pwd_input('')
 
-        auth_page.login_page2()
+        auth_page.login_page()
 
         time.sleep(2)
 
+        prof_page = ProfilePage(driver=driver)
+        prof_page.open()
 
-#        assert current_page.text_is_displayed(text='LOGIN EXCEPTION TEXT', timeout=10)
+        assert prof_page.find_text('a1@mail.ru', _time_out=5)
 
-  #      driver.quit()
+
+        driver.quit()
